@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
+import { Routes, Route } from "react-router-dom";
+import "primereact/resources/primereact.min.css";                  //core css
+import "primeicons/primeicons.css";  
+
+import { DataTableBeers } from './components/DataTableDemo/DataTableBeers.js';
+import { Header } from './components/Header/Header.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Header />}>
+        <Route index element={<DataTableBeers />}/>
+      </Route>
+    </Routes>
   );
 }
 
