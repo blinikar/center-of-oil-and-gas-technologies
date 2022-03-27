@@ -7,6 +7,6 @@ import React from 'react';
 
 export const Star = (props) => {
 
-    let classNameStr = props.data.favorite ? "pi pi-star-fill" : "pi pi-star";
-    return <i onClick={() => {props.onClick(props.data)}} className={classNameStr}/>
+    let classNameStr = props.state ? "pi pi-star-fill" : "pi pi-star";
+    return <i onClick={(e) => {e.stopPropagation();props.onClick(props.data, props.state);}} className={classNameStr}/>
 }

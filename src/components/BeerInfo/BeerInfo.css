@@ -1,0 +1,19 @@
+.info-card {
+    margin-top: 40px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.beer-image {
+
+    rotate: 90deg;
+    margin-left: 85px;
+    margin-top: calc(-70px);
+    margin-bottom: -60px;
+    height: 200px;
+}
+
+.label{
+    display: inline-flex;
+    padding-bottom: 5px;
+}
