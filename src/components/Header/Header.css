@@ -12,3 +12,7 @@ a {
     color: white;
     text-decoration: none;
 }
+
+.loading-bar {
+    height: 5px;
+}
